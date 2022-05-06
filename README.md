@@ -5,6 +5,7 @@
 ```el
 (use-package consult-git-commit
   :straight (consult-git-commit :host github :repo "aaronjensen/consult-git-commit")
+  :after git-commit
   :bind (:map
          git-commit-mode-map
          ("M-s" . #'consult-git-commit-message)))
